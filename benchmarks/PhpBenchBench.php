@@ -9,6 +9,7 @@ use PhpBench\DependencyInjection\Container;
  */
 class PhpBenchBench extends ContainerBenchCase
 {
+    /** @var Container */
     private $container;
 
     public function initUnoptimized()

@@ -5,10 +5,10 @@
         "pimple/pimple": "^3.0.0",
         "illuminate/container": "^5.0.0",
         "doctrine/cache": "@stable",
-        "phpbench/phpbench": "^0.11.1",
         "league/container": "^2.2",
         "aura/di": "^3.0"
         "symfony/dependency-injection": "^5.2",
+        "phpbench/phpbench": "^0.17.1",
         "laminas/laminas-servicemanager": "^3.6",
     },
     "autoload": {
