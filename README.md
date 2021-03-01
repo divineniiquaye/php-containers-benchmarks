@@ -42,9 +42,9 @@ Versions
 --------
 
 ```
-league/container                    2.2.0   A fast and intuitive dependency injection container.
 aura/di                             4.1.0   A serializable dependency injection container with constructor and setter injection...
 illuminate/container                v8.29.0 The Illuminate Container package.
+league/container                    3.3.4   A fast and intuitive dependency injection container.
 php-di/php-di                       6.3.0   The dependency injection container for humans
 phpbench/phpbench                   0.17.1  PHP Benchmarking Framework
 pimple/pimple                       v3.3.1  Pimple, a simple Dependency Injection Container

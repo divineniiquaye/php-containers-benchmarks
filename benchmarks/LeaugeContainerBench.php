@@ -2,8 +2,6 @@
 
 namespace PhpBench\Benchmarks\Container;
 
-use DI\ContainerBuilder;
-use DI\Cache\ArrayCache;
 use League\Container\Container;
 
 /**
@@ -11,6 +9,7 @@ use League\Container\Container;
  */
 class LeagueBench extends ContainerBenchCase
 {
+    /** @var Container */
     private $container;
 
     public function initOptimized()
@@ -49,4 +48,3 @@ class LeagueBench extends ContainerBenchCase
         $this->container->get('bicycle_factory_shared');
     }
 }
-

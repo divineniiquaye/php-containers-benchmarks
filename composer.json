@@ -1,12 +1,12 @@
 {
     "name": "divineniiquaye/benchmark-containers",
     "require": {
-        "league/container": "^2.2",
         "php-di/php-di": "^6.3",
         "symfony/dependency-injection": "^5.2",
         "pimple/pimple": "^3.3",
         "illuminate/container": "^8.29",
         "phpbench/phpbench": "^0.17.1",
+        "league/container": "^3.3",
         "laminas/laminas-servicemanager": "^3.6",
         "aura/di": "^4.1",
         "divineniiquaye/rade-di": "^0.1.14",
