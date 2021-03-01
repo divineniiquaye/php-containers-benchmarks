@@ -9,6 +9,7 @@ use Pimple\Container;
  */
 class PimpleBench extends ContainerBenchCase
 {
+    /** @var Container */
     private $container;
 
     /**
@@ -59,4 +60,3 @@ class PimpleBench extends ContainerBenchCase
         $this->container = $container;
     }
 }
-
