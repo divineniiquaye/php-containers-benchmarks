@@ -3,12 +3,12 @@
     "require": {
         "illuminate/container": "^5.0.0",
         "league/container": "^2.2",
-        "aura/di": "^3.0"
         "php-di/php-di": "^6.3",
         "symfony/dependency-injection": "^5.2",
         "pimple/pimple": "^3.3",
         "phpbench/phpbench": "^0.17.1",
         "laminas/laminas-servicemanager": "^3.6",
+        "aura/di": "^4.1",
         "divineniiquaye/rade-di": "^0.1.14",
         "nette/di": "^3.0"
     },

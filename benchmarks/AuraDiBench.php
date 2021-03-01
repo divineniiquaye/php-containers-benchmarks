@@ -3,6 +3,7 @@
 namespace PhpBench\Benchmarks\Container;
 
 use Aura\Di\Container;
+use Aura\Di\ContainerBuilder;
 use Aura\Di\Injection\InjectionFactory;
 use Aura\Di\Resolver\Reflector;
 use Aura\Di\Resolver\Resolver;
@@ -12,6 +13,7 @@ use Aura\Di\Resolver\Resolver;
  */
 class AuraDiBench extends ContainerBenchCase
 {
+    /** @var Container */
     private $container;
 
     /**
@@ -49,11 +51,11 @@ class AuraDiBench extends ContainerBenchCase
 
     public function init()
     {
-        $container = new Container(new InjectionFactory(new Resolver(new Reflector())));
+        $builder = new ContainerBuilder();
+        $container = $builder->newInstance();
 
-        // alternatively you can do
-        // $builder = new \Aura\Di\ContainerBuilder();
-        // $container = $builder->newInstance();
+        //alternatively you can do
+        //$container = new Container(new InjectionFactory(new Resolver(new Reflector())));
 
         $container->set('bicycle_factory', $container->lazyNew('PhpBench\Benchmarks\Container\Acme\BicycleFactory'));
 
