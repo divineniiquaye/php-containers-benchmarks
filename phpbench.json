@@ -21,7 +21,7 @@
             "title": "Memory",
             "generator": "table",
             "compare": "subject",
-            "compare_fields": [ "mem" ],
+            "compare_fields": [ "mem_peak" ],
             "break": ["revs", "its"],
             "cols": ["benchmark"]
         },
@@ -34,7 +34,7 @@
             "description": "Sorted by mode",
             "extends": "aggregate",
             "break": [ "subject", "its", "revs" ],
-            "cols": ["benchmark", "mem", "best", "mean", "mode", "worst", "stdev", "rstdev", "diff" ],
+            "cols": ["benchmark", "mem_peak", "best", "mean", "mode", "worst", "stdev", "rstdev", "diff" ],
             "sort": { "mode": "asc" }
         },
         "all": {
