@@ -1,9 +1,5 @@
 {
-    "name": "phpbench/benchmark-containers",
-    "comments": [
-        "Doctrine Cache is for PHP-DI",
-        "Symfony Config is for Symfony Dependency Injection (for the cache)"
-    ],
+    "name": "divineniiquaye/benchmark-containers",
     "require": {
         "php-di/php-di": "^5.0.0",
         "symfony/dependency-injection": "^2.7.0",
@@ -14,8 +10,8 @@
         "symfony/filesystem": "^2.7.0",
         "phpbench/phpbench": "^0.11.1",
         "league/container": "^2.2",
-        "zendframework/zend-servicemanager": "^3.0",
         "aura/di": "^3.0"
+        "laminas/laminas-servicemanager": "^3.6",
     },
     "autoload": {
         "psr-4": {

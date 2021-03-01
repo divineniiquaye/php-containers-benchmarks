@@ -17,7 +17,7 @@ Including:
 - [PHPBench Container](https://github.com/phpbench/phpbench).
 - [Illuminate (Laravel) Container](https://github.com/illuminate/container)
 - [Php League Container](http://container.thephpleague.com/)
-- [Zend Service Manager](https://github.com/zendframework/zend-servicemanager)
+- [Laminas Service Manager](https://github.com/laminas/laminas-servicemanager)
 - [Aura DI](https://github.com/auraphp/aura.di)
 
 Note that PHPBench Container is not a "real" container, but a minimal
@@ -48,7 +48,7 @@ php-di/php-di                       5.2.2   The dependency injection container
 phpbench/phpbench                   0.11.1  PHP Benchmarking Framework
 pimple/pimple                       v3.0.2  Pimple, a simple Dependency
 symfony/dependency-injection        v2.8.4  Symfony DependencyInjection
-zendframework/zend-servicemanager   3.0.3
+laminas/laminas-servicemanager      3.6.4   Factory-Driven Dependency Injection Container
 ```
 
 Results

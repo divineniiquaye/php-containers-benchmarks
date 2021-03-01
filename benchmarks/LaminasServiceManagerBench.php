@@ -3,13 +3,14 @@
 namespace PhpBench\Benchmarks\Container;
 
 use PhpBench\Benchmarks\Container\Acme\BicycleFactory;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * @Groups({"phpbench"}, extend=true)
  */
-class ZendServiceManagerBench extends ContainerBenchCase
+class LaminasServiceManagerBench extends ContainerBenchCase
 {
+    /** @var ServiceManager */
     private $container;
 
     public function initOptimized()
@@ -21,8 +22,12 @@ class ZendServiceManagerBench extends ContainerBenchCase
     {
         $this->container = new ServiceManager([
             'factories' => [
-                'bicycle_factory' => function () { return new BicycleFactory(); },
-                'bicycle_factory_prototype' => function () { return new BicycleFactory(); },
+                'bicycle_factory' => function () {
+                    return new BicycleFactory();
+                },
+                'bicycle_factory_prototype' => function () {
+                    return new BicycleFactory();
+                },
             ],
             'shared' => [
                 'bicycle_factory_prototype' => false,
