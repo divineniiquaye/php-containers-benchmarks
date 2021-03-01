@@ -1,11 +1,10 @@
 {
     "name": "divineniiquaye/benchmark-containers",
     "require": {
-        "php-di/php-di": "^5.0.0",
         "illuminate/container": "^5.0.0",
-        "doctrine/cache": "@stable",
         "league/container": "^2.2",
         "aura/di": "^3.0"
+        "php-di/php-di": "^6.3",
         "symfony/dependency-injection": "^5.2",
         "pimple/pimple": "^3.3",
         "phpbench/phpbench": "^0.17.1",

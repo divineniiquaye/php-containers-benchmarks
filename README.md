@@ -44,7 +44,7 @@ aura/di                             3.1.0   A serializable dependency
 injection container with constructor and setter injectio...
 illuminate/container                v5.2.28 The Illuminate Container package.
 league/container                    2.2.0   A fast and intuitive dependency injection container.
-php-di/php-di                       5.2.2   The dependency injection container
+php-di/php-di                       6.3.0   The dependency injection container for humans
 phpbench/phpbench                   0.17.1  PHP Benchmarking Framework
 pimple/pimple                       v3.3.1  Pimple, a simple Dependency Injection Container
 symfony/dependency-injection        v5.2.3  Allows you to standardize and centralize the way objects are constructed in your application

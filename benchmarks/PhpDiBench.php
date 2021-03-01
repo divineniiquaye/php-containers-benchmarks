@@ -3,23 +3,25 @@
 namespace PhpBench\Benchmarks\Container;
 
 use DI\ContainerBuilder;
-use DI\Cache\ArrayCache;
+use DI\Container;
 
 /**
  * @Groups({"php-di"}, extend=true)
  */
 class PhpDiBench extends ContainerBenchCase
 {
+    /** @var Container */
     private $container;
 
     private function createOptimizedBuilder()
     {
-        $cache = new ArrayCache($this->cacheDir);
         $builder = new ContainerBuilder();
-        $builder->setDefinitionCache($cache);
-        $builder->addDefinitions(array(
-            'bicycle_factory' => \DI\object('PhpBench\Benchmarks\Container\Acme\BicycleFactory')
-        ));
+        $builder->addDefinitions([
+            'bicycle_factory_shared' => \DI\create('PhpBench\Benchmarks\Container\Acme\BicycleFactory'),
+            'bicycle_factory' => \Di\factory(function () {
+                return new \PhpBench\Benchmarks\Container\Acme\BicycleFactory();
+            })
+        ]);
 
         return $builder;
     }
@@ -27,17 +29,17 @@ class PhpDiBench extends ContainerBenchCase
     public function initOptimized()
     {
         $builder = $this->createOptimizedBuilder();
-        $container = $builder->build();
-        $container->get('bicycle_factory');
-        $this->container = $this->createOptimizedBuilder()->build();
+        $builder->enableCompilation(self::getCacheDir());
+
+        $this->container = $builder->build();
     }
 
     public function initUnoptimized()
     {
-        $builder = new ContainerBuilder();
+        $container = new Container();
+        $container->set('bicycle_factory', new \PhpBench\Benchmarks\Container\Acme\BicycleFactory());
 
-        $this->container = $builder->build();
-        $this->container->set('bicycle_factory', \DI\object('PhpBench\Benchmarks\Container\Acme\BicycleFactory'));
+        $this->container = $container;
     }
 
     public function initPrototype()
@@ -47,12 +49,12 @@ class PhpDiBench extends ContainerBenchCase
 
     public function benchGetOptimized()
     {
-        $this->container->get('bicycle_factory');
+        $this->container->get('bicycle_factory_shared');
     }
 
     public function benchGetUnoptimized()
     {
-        $this->container->get('bicycle_factory');
+        $this->container->get('bicycle_factory_shared');
     }
 
     public function benchGetPrototype()
@@ -63,6 +65,6 @@ class PhpDiBench extends ContainerBenchCase
     public function benchLifecycle()
     {
         $this->initOptimized();
-        $this->container->get('bicycle_factory');
+        $this->container->get('bicycle_factory_shared');
     }
 }
