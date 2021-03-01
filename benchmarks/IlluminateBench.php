@@ -2,9 +2,6 @@
 
 namespace PhpBench\Benchmarks\Container;
 
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Dumper\PhpDumper;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Illuminate\Container\Container;
 
 /**
@@ -12,6 +9,7 @@ use Illuminate\Container\Container;
  */
 class IlluminateBench extends ContainerBenchCase
 {
+    /** @var Container */
     private $container;
 
     /**
@@ -19,14 +17,12 @@ class IlluminateBench extends ContainerBenchCase
      */
     public function benchGetOptimized()
     {
-        $this->container['bicycle_factory_shared'];
+        $this->container->get('bicycle_factory_shared');
     }
 
-    /**
-     * @Skip()
-     */
     public function benchGetUnoptimized()
     {
+        $this->container['bicycle_factory_shared'];
     }
 
     public function benchGetPrototype()
@@ -58,7 +54,7 @@ class IlluminateBench extends ContainerBenchCase
         }, true);
         $builder->bind('bicycle_factory', function ($app) {
             return new \PhpBench\Benchmarks\Container\Acme\BicycleFactory();
-        }, false);
+        });
         $this->container = $builder;
     }
 }
