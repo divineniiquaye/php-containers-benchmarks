@@ -9,6 +9,8 @@
         "pimple/pimple": "^3.3",
         "phpbench/phpbench": "^0.17.1",
         "laminas/laminas-servicemanager": "^3.6",
+        "divineniiquaye/rade-di": "^0.1.14",
+        "nette/di": "^3.0"
     },
     "autoload": {
         "psr-4": {

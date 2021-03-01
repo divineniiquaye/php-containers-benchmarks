@@ -19,6 +19,8 @@ Including:
 - [Php League Container](http://container.thephpleague.com/)
 - [Laminas Service Manager](https://github.com/laminas/laminas-servicemanager)
 - [Aura DI](https://github.com/auraphp/aura.di)
+- [Rade DI](https://github.com/divineniiquaye/rade-di)
+- [Nette DI](https://github.com/nette/di)
 
 Note that PHPBench Container is not a "real" container, but a minimal
 ad-hoc call-back based container used by PHPBench itself.
@@ -49,6 +51,8 @@ phpbench/phpbench                   0.17.1  PHP Benchmarking Framework
 pimple/pimple                       v3.3.1  Pimple, a simple Dependency Injection Container
 symfony/dependency-injection        v5.2.3  Allows you to standardize and centralize the way objects are constructed in your application
 laminas/laminas-servicemanager      3.6.4   Factory-Driven Dependency Injection Container
+divineniiquaye/rade-di              v0.1.14 A simple and smart dependency injection for PHP
+nette/di                            v3.0.7  Nette Dependency Injection Container: Flexible, compiled and full-featured DIC...
 ```
 
 Results
