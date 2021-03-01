@@ -47,7 +47,7 @@ league/container                    2.2.0   A fast and intuitive dependency inje
 php-di/php-di                       5.2.2   The dependency injection container
 phpbench/phpbench                   0.11.1  PHP Benchmarking Framework
 pimple/pimple                       v3.0.2  Pimple, a simple Dependency
-symfony/dependency-injection        v2.8.4  Symfony DependencyInjection
+symfony/dependency-injection        v5.2.3  Allows you to standardize and centralize the way objects are constructed in your application
 laminas/laminas-servicemanager      3.6.4   Factory-Driven Dependency Injection Container
 ```
 

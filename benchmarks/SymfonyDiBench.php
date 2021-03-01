@@ -4,7 +4,6 @@ namespace PhpBench\Benchmarks\Container;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Dumper\PhpDumper;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * @Groups({"symfony"}, extend=true)
@@ -12,6 +11,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class SymfonyDiBench extends ContainerBenchCase
 {
+    /** @var ContainerBuilder */
     private $container;
 
     public static function warmup()
@@ -19,6 +19,7 @@ class SymfonyDiBench extends ContainerBenchCase
         $containerFile = self::getCacheDir() . '/container.php';
 
         $builder = self::getContainer();
+        $builder->compile();
         $dumper = new PhpDumper($builder);
         file_put_contents($containerFile, $dumper->dump());
     }
@@ -27,8 +28,8 @@ class SymfonyDiBench extends ContainerBenchCase
     {
         $builder = new ContainerBuilder();
         $protoDefinition = $builder->register('bicycle_factory', 'PhpBench\Benchmarks\Container\Acme\BicycleFactory');
-        $protoDefinition->setScope(ContainerInterface::SCOPE_PROTOTYPE);
-        $definition = $builder->register('bicycle_factory_shared', 'PhpBench\Benchmarks\Container\Acme\BicycleFactory');
+        $protoDefinition->setShared(false)->setPublic(true);
+        $builder->register('bicycle_factory_shared', 'PhpBench\Benchmarks\Container\Acme\BicycleFactory')->setPublic(true);
 
         return $builder;
     }
