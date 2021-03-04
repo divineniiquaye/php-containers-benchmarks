@@ -15,11 +15,6 @@ class LaminasServiceManagerBench extends ContainerBenchCase
 
     public function initOptimized()
     {
-        $this->initUnoptimized();
-    }
-
-    public function initUnoptimized()
-    {
         $this->container = new ServiceManager([
             'factories' => [
                 'bicycle_factory' => function () {
@@ -35,6 +30,20 @@ class LaminasServiceManagerBench extends ContainerBenchCase
         ]);
     }
 
+    public function initUnoptimized()
+    {
+        $container = new ServiceManager();
+        $container->setFactory('bicycle_factory', function () {
+            return new BicycleFactory();
+        });
+        $container->setFactory('bicycle_factory_prototype', function () {
+            return new BicycleFactory();
+        });
+        $container->setShared('bicycle_factory_prototype', false);
+
+        $this->container = $container;
+    }
+
     public function benchLifecycle()
     {
         $this->initUnoptimized();
@@ -46,11 +55,9 @@ class LaminasServiceManagerBench extends ContainerBenchCase
         $this->container->get('bicycle_factory');
     }
 
-    /**
-     * @Skip()
-     */
     public function benchGetUnoptimized()
     {
+        $this->container->get('bicycle_factory');
     }
 
     public function benchGetPrototype()
