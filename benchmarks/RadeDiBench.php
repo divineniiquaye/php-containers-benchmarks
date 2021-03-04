@@ -14,7 +14,7 @@ class RadeDiBench extends ContainerBenchCase
 
     public function benchGetUnoptimized()
     {
-        $this->container->get('bicycle_factory_shared');
+        $this->container['bicycle_factory_shared'];
     }
 
     public function benchGetOptimized()
