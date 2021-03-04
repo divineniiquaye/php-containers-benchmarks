@@ -50,8 +50,8 @@ phpbench/phpbench                   0.17.1  PHP Benchmarking Framework
 pimple/pimple                       v3.3.1  Pimple, a simple Dependency Injection Container
 symfony/dependency-injection        v5.2.3  Allows you to standardize and centralize the way objects are constructed in your application
 laminas/laminas-servicemanager      3.6.4   Factory-Driven Dependency Injection Container
-nette/di                            v3.0.7  Nette Dependency Injection Container: Flexible, compiled and full-featured DIC...
 divineniiquaye/rade-di              v0.1.20 A simple and smart dependency injection for PHP
+nette/di                            v3.0.8  Nette Dependency Injection Container: Flexible, compiled and full-featured DIC...
 ```
 
 Results
