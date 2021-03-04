@@ -43,7 +43,7 @@ Versions
 
 ```
 aura/di                             4.1.0   A serializable dependency injection container with constructor and setter injection...
-illuminate/container                v8.29.0 The Illuminate Container package.
+illuminate/container                v8.30.1 The Illuminate Container package.
 league/container                    3.3.4   A fast and intuitive dependency injection container.
 php-di/php-di                       6.3.0   The dependency injection container for humans
 phpbench/phpbench                   0.17.1  PHP Benchmarking Framework
