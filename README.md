@@ -51,6 +51,7 @@ pimple/pimple                       v3.4.0  Pimple, a simple Dependency Injectio
 laminas/laminas-servicemanager      3.6.4   Factory-Driven Dependency Injection Container
 divineniiquaye/rade-di              v0.1.20 A simple and smart dependency injection for PHP
 nette/di                            v3.0.8  Nette Dependency Injection Container: Flexible, compiled and full-featured DIC...
+spiral/core                         v2.7.6  IoC container, IoC scopes, factory, memory, configuration interfaces
 ```
 
 Results

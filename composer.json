@@ -10,7 +10,8 @@
         "laminas/laminas-servicemanager": "^3.6",
         "aura/di": "^4.1",
         "divineniiquaye/rade-di": "^0.1.14",
-        "nette/di": "^3.0"
+        "nette/di": "^3.0",
+        "spiral/core": "^2.7",
     },
     "autoload": {
         "psr-4": {
