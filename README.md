@@ -47,8 +47,8 @@ aura/di                             4.1.0   A serializable dependency injection 
 illuminate/container                v8.32.1 The Illuminate Container package.
 league/container                    3.3.4   A fast and intuitive dependency injection container.
 php-di/php-di                       6.3.0   The dependency injection container for humans
-symfony/dependency-injection        v5.2.3  Allows you to standardize and centralize the way objects are constructed in your application
 pimple/pimple                       v3.4.0  Pimple, a simple Dependency Injection Container
+symfony/dependency-injection        v5.2.4  Allows you to standardize and centralize the way objects are constructed in your application
 laminas/laminas-servicemanager      3.6.4   Factory-Driven Dependency Injection Container
 divineniiquaye/rade-di              v0.1.20 A simple and smart dependency injection for PHP
 nette/di                            v3.0.8  Nette Dependency Injection Container: Flexible, compiled and full-featured DIC...
