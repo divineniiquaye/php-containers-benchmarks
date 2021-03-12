@@ -30,7 +30,7 @@ class SpiralDiBench extends ContainerBenchCase
     public function benchLifecycle()
     {
         $this->initOptimized();
-        $this->container->make('bicycle_factory_shared');
+        $this->container->make('bicycle_factory');
     }
 
     public function initUnoptimized()
