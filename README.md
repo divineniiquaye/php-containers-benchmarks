@@ -44,7 +44,7 @@ Versions
 
 ```
 aura/di                             4.1.0   A serializable dependency injection container with constructor and setter injection...
-illuminate/container                v8.30.1 The Illuminate Container package.
+illuminate/container                v8.32.1 The Illuminate Container package.
 league/container                    3.3.4   A fast and intuitive dependency injection container.
 php-di/php-di                       6.3.0   The dependency injection container for humans
 symfony/dependency-injection        v5.2.3  Allows you to standardize and centralize the way objects are constructed in your application
