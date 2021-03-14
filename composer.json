@@ -1,5 +1,6 @@
 {
     "name": "divineniiquaye/benchmark-containers",
+    "description": "PHP Container Benchmarks",
     "require": {
         "php-di/php-di": "^6.3",
         "symfony/dependency-injection": "^5.2",
