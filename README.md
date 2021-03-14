@@ -3,13 +3,9 @@ PHP Container Benchmarking Suite
 
 [![Build Status](https://api.travis-ci.com/divineniiquaye/php-containers-benchmarks.svg)](https://travis-ci.com/github/divineniiquaye/php-containers-benchmarks)
 
-This benchmarking suite compares PHP Dependency Injection Containers. Its sort
-of an example project for [PHPBench](https://github.com/phpbench/phpbench).
+This benchmarking suite compares PHP Dependency Injection Containers. It is intended to be a base for developing a standard benchmarking suite for all of the PHP containers out there.
 
-It is intended to be a base for developing a standard benchmarking suite for
-all of the PHP containers out there.
-
-Including:
+The benchmarked containers:
 
 - [PHP-DI](https://github.com/PHP-DI/PHP-DI).
 - [Symfony Dependency Injection](https://github.com/symfony/DependencyInjection).
@@ -23,9 +19,6 @@ Including:
 - [Nette DI](https://github.com/nette/di)
 - [Spiral DI](https://github.com/spiral/core)
 - [Chubbyphp Container](https://github.com/chubbyphp/chubbyphp-container)
-
-Note that PHPBench Container is not a "real" container, but a minimal
-ad-hoc call-back based container used by PHPBench itself.
 
 Disclaimer
 ----------
