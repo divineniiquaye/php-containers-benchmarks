@@ -76,17 +76,17 @@ Check [Travis Build 220028115](https://travis-ci.com/github/divineniiquaye/php-c
 
 benchmark | benchGetOptimized | benchGetUnoptimized | benchGetPrototype | benchLifecycle
  --- | --- | --- | --- | --- 
-| SymfonyDiBench             | 1.083μs                        | 3.148μs                          | 2.313μs                        | 6.901μs                     |
-| ChubbyphpBench             | 1.118μs                        |                                  | 2.578μs                        | 6.993μs                     |
-| AuraDiBench                | 1.265μs                        |                                  | 15.630μs                       | 44.120μs                    |
-| RadeDiBench                | 1.260μs                        | 1.169μs                          | 1.226μs                        | 6.746μs                     |
-| NetteDiBench               | 1.167μs                        | 1.545μs                          | 4.285μs                        | 53.867μs                    |
-| PimpleBench                | 1.297μs                        |                                  | 3.989μs                        | 10.669μs                    |
-| PhpDiBench                 | 1.156μs                        | 1.812μs                          | 21.129μs                       | 35.230μs                    |
-| IlluminateBench            | 6.029μs                        | 6.783μs                          | 19.134μs                       | 28.475μs                    |
-| LeagueBench                | 13.859μs                       |                                  | 18.107μs                       | 35.448μs                    |
-| LaminasServiceManagerBench | 1.142μs                        | 1.150μs                          | 4.689μs                        | 12.142μs                    |
-| SpiralDiBench              | 1.237μs                        | 1.795μs                          | 1.245μs                        | 4.939μs                     |
+| SymfonyDiBench             | 1.083μs | 3.148μs | 2.313μs  | 6.901μs  |
+| ChubbyphpBench             | 1.118μs |         | 2.578μs  | 6.993μs  |
+| AuraDiBench                | 1.265μs |         | 15.630μs | 44.120μs |
+| RadeDiBench                | 1.260μs | 1.169μs | 1.226μs  | 6.746μs  |
+| NetteDiBench               | 1.167μs | 1.545μs | 4.285μs  | 53.867μs |
+| PimpleBench                | 1.297μs |         | 3.989μs  | 10.669μs |
+| PhpDiBench                 | 1.156μs | 1.812μs | 21.129μs | 35.230μs |
+| IlluminateBench            | 6.029μs | 6.783μs | 19.134μs | 28.475μs |
+| LeagueBench                | 13.859μs|         | 18.107μs | 35.448μs |
+| LaminasServiceManagerBench | 1.142μs | 1.150μs | 4.689μs  | 12.142μs |
+| SpiralDiBench              | 1.237μs | 1.795μs | 1.245μs  | 4.939μs  |
 
 **NOTE**: Memory is `memory_get_peak_usage` after executing the operation 1000 times.
 
@@ -94,17 +94,17 @@ benchmark | benchGetOptimized | benchGetUnoptimized | benchGetPrototype | benchL
 
 benchmark | benchGetOptimized | benchGetUnoptimized | benchGetPrototype | benchLifecycle
  --- | --- | --- | --- | ---
-| SymfonyDiBench             | 1,307,696b                         | 1,781,808b                           | 1,307,696b                         | 1,307,272b                      |
-| ChubbyphpBench             | 1,156,560b                         |                                      | 1,156,560b                         | 1,156,136b                      |
-| AuraDiBench                | 1,320,608b                         |                                      | 1,320,608b                         | 1,320,184b                      |
-| RadeDiBench                | 1,313,968b                         | 1,317,832b                           | 1,313,968b                         | 2,459,984b                      |
-| NetteDiBench               | 1,328,104b                         | 1,397,168b                           | 1,366,432b                         | 1,327,680b                      |
-| PimpleBench                | 1,182,520b                         |                                      | 1,182,520b                         | 1,182,096b                      |
-| PhpDiBench                 | 1,476,200b                         | 1,447,848b                           | 1,528,120b                         | 4,561,880b                      |
-| IlluminateBench            | 1,426,560b                         | 1,426,568b                           | 1,426,568b                         | 1,426,144b                      |
-| LeagueBench                | 1,316,936b                         |                                      | 1,316,936b                         | 2,559,256b                      |
-| LaminasServiceManagerBench | 1,404,864b                         | 1,404,864b                           | 1,404,864b                         | 3,396,144b                      |
-| SpiralDiBench              | 1,327,496b                         | 1,327,496b                           | 1,327,496b                         | 1,732,232b                      |
+| SymfonyDiBench             | 1,307,696b | 1,781,808b | 1,307,696b | 1,307,272b |
+| ChubbyphpBench             | 1,156,560b |            | 1,156,560b | 1,156,136b |
+| AuraDiBench                | 1,320,608b |            | 1,320,608b | 1,320,184b |
+| RadeDiBench                | 1,313,968b | 1,317,832b | 1,313,968b | 2,459,984b |
+| NetteDiBench               | 1,328,104b | 1,397,168b | 1,366,432b | 1,327,680b |
+| PimpleBench                | 1,182,520b |            | 1,182,520b | 1,182,096b |
+| PhpDiBench                 | 1,476,200b | 1,447,848b | 1,528,120b | 4,561,880b |
+| IlluminateBench            | 1,426,560b | 1,426,568b | 1,426,568b | 1,426,144b |
+| LeagueBench                | 1,316,936b |            | 1,316,936b | 2,559,256b |
+| LaminasServiceManagerBench | 1,404,864b | 1,404,864b | 1,404,864b | 3,396,144b |
+| SpiralDiBench              | 1,327,496b | 1,327,496b | 1,327,496b | 1,732,232b |
 
 ### Detail by subject
 
