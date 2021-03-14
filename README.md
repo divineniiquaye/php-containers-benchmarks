@@ -22,6 +22,7 @@ Including:
 - [Rade DI](https://github.com/divineniiquaye/rade-di)
 - [Nette DI](https://github.com/nette/di)
 - [Spiral DI](https://github.com/spiral/core)
+- [Chubbyphp Container](https://github.com/chubbyphp/chubbyphp-container)
 
 Note that PHPBench Container is not a "real" container, but a minimal
 ad-hoc call-back based container used by PHPBench itself.
@@ -53,6 +54,7 @@ laminas/laminas-servicemanager      3.6.4   Factory-Driven Dependency Injection 
 divineniiquaye/rade-di              v0.2.2  A simple and smart dependency injection for PHP
 nette/di                            v3.0.8  Nette Dependency Injection Container: Flexible, compiled and full-featured DIC...
 spiral/core                         v2.7.7  IoC container, IoC scopes, factory, memory, configuration interfaces
+chubbyphp/chubbyphp-container       2.0.0   A simple PSR-11 container implementation.
 ```
 
 Results
