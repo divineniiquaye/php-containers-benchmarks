@@ -146,3 +146,10 @@ For the HTML report:
 ```
 $ ./vendor/bin/phpbench show latest --report=all --output=container_html
 ```
+
+Conclusion
+----------
+
+Keep in mind that in a well-architected application you won't call your DI Container hundreds or even thousands of times because ideally there should be as few **composition roots** as possible (but there is a good chance of needing the container in other places of the application layer - e.g. in your middleware or bootstrap files). You probably won't see difference between the fastest and the slowest DIC in the real life, but benchmarking helps identify their differences.
+
+To sum up, when choosing a container it only depends on your needs which one suits your project best: if you have a performance-critical application then you probably want to choose a compiled container. If maximum performance is not required, but you develop a big and complex system then I would recommend a dynamic container with autowiring capabilities like [Rade DI](https://github.com/divineniiquaye/rade-di). Otherwise you can go with simpler containers.
