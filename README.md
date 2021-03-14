@@ -50,7 +50,7 @@ php-di/php-di                       6.3.0   The dependency injection container f
 pimple/pimple                       v3.4.0  Pimple, a simple Dependency Injection Container
 symfony/dependency-injection        v5.2.4  Allows you to standardize and centralize the way objects are constructed in your application
 laminas/laminas-servicemanager      3.6.4   Factory-Driven Dependency Injection Container
-divineniiquaye/rade-di              v0.1.20 A simple and smart dependency injection for PHP
+divineniiquaye/rade-di              v0.2.2  A simple and smart dependency injection for PHP
 nette/di                            v3.0.8  Nette Dependency Injection Container: Flexible, compiled and full-featured DIC...
 spiral/core                         v2.7.7  IoC container, IoC scopes, factory, memory, configuration interfaces
 ```

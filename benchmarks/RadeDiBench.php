@@ -43,11 +43,6 @@ class RadeDiBench extends ContainerBenchCase
         $this->container = new OptimizedRadeContainer();
     }
 
-    public function initPrototype()
-    {
-        $this->initOptimized();
-    }
-
     public static function getContainer()
     {
         $container = new Container();
@@ -61,7 +56,7 @@ class RadeDiBench extends ContainerBenchCase
 }
 
 class OptimizedRadeContainer extends Container {
-    protected const METHODS_MAP = [
+    protected array $methodsMap = [
         'container' => 'getServiceContainer',
         'bicycle_factory_shared' => 'getBicycleFactoryShared',
         'bicycle_factory' => 'getBicycleFactory',
