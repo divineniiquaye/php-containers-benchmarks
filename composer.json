@@ -3,6 +3,7 @@
     "description": "PHP Container Benchmarks",
     "require": {
         "php-di/php-di": "^6.3",
+        "symfony/config": "^5.2",
         "symfony/dependency-injection": "^5.2",
         "pimple/pimple": "^3.3",
         "illuminate/container": "^8.29",
